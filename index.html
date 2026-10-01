@@ -108,6 +108,20 @@
                         </div>
                     </div>
 
+                    <!-- Link Foto/Dokumentasi -->
+                    <div class="space-y-2">
+                        <label for="linkFoto" class="block text-sm font-semibold text-gray-700">Link Google Drive Foto/Dokumentasi <span class="text-red-500">*</span></label>
+                        <p class="text-xs text-gray-500 mb-1">Pastikan folder atau file foto diset "Siapa saja yang memiliki link".</p>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <input type="url" id="linkFoto" name="linkFoto" required placeholder="https://drive.google.com/..." class="w-full bg-gray-50 border border-gray-200 text-gray-700 py-3 pl-12 pr-4 rounded-xl leading-tight focus:outline-none focus:bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 transition-colors">
+                        </div>
+                    </div>
+
                     <!-- Link Video -->
                     <div class="space-y-2">
                         <label for="linkVideo" class="block text-sm font-semibold text-gray-700">Link Video Kokurikuler <span class="text-red-500">*</span></label>
@@ -154,7 +168,7 @@
                     </svg>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Berhasil Dikirim!</h3>
-                <p class="text-gray-600 mb-6">Laporan dan Video Mini Garden untuk tema "Lingkungan yang bersih dan nyaman" telah berhasil kami terima. Terima kasih atas partisipasinya!</p>
+                <p class="text-gray-600 mb-6">Laporan, Foto Dokumentasi, dan Video Mini Garden untuk tema "Lingkungan yang bersih dan nyaman" telah berhasil kami terima. Terima kasih atas partisipasinya!</p>
                 <button id="closeModal" class="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-4 rounded-xl transition-colors">
                     Tutup
                 </button>
@@ -186,7 +200,7 @@
                 classSelect.appendChild(optGroup);
             });
 
-            // GANTI URL DI BAWAH INI DENGAN URL WEB APP APP SCRIPT ANDA
+            // URL Google Apps Script Anda
             const scriptURL = 'https://script.google.com/macros/s/AKfycbwKfRFCO2jUgjdqG4CqBiRnJ3lJbdF7rfk6ROVAANzTfq5Y2pZQeJDRuxMzFthlR5J8/exec'; 
 
             // Handle Form Submission
